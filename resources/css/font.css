@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "TippytoesBold";
+    src: url("../fonts/TippytoesBold.ttf") format("TrueType");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "TippytoesXTraBold";
+    src: url("../fonts/TippytoesBold.ttf") format("TrueType");
+    font-style: normal;
+    font-weight: normal;
+}

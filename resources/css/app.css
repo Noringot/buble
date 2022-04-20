@@ -1,0 +1,87 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'font.css';
+
+:root {
+    --main-color: #5D5D5D;
+    --add-color: #04F1FF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.employees .swiper-button-prev {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--add-color);
+    transform: translateY(-150%);
+    z-index: 100;
+}
+.employees .swiper-button-prev:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background:  url("/images/slider-arrow.svg") no-repeat center center;
+}
+.employees .swiper-button-next {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--add-color);
+    transform: translateY(-150%) rotateZ(180deg);
+    z-index: 100;
+}
+.employees .swiper-button-next:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background:  url("/images/slider-arrow.svg") no-repeat center center;
+}
+.scroll {
+    position: fixed;
+    top: 200px;
+    left: 150px;
+    z-index: 100;
+}
+
+.employees__shadow {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: rgb(32,32,32);
+    background: linear-gradient(90deg, rgba(32,32,32,1) 17%, rgba(32,32,32,0.7007003484987745) 54%, rgba(249,249,249,0) 100%);
+    z-index: 50;
+}
+.employees__shadow-left {
+    left: 0;
+}
+.employees__shadow-right {
+    transform: rotateZ(180deg);
+    right: 0;
+}
+
